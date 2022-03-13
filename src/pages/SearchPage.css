@@ -1,0 +1,15 @@
+.search__screen{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #141414;
+}
+.result__container {
+    color: white;
+    padding: 100px 100px 0 100px;
+    margin: 0 auto;
+}
+
+.result__movie{
+      width:30%;
+    margin: 10px auto;
+}

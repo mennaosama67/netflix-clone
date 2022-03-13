@@ -1,0 +1,128 @@
+.nav {
+  position: fixed;
+  z-index: 1000;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav__black {
+  background-color: black;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: 140px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.accordion {
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+.nav__avatar__accordian {
+  width: 40px;
+  height: 40px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.accordion-body {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+.accordion-button::after {
+  margin-left: 5px;
+}
+#headingOne > button {
+  margin-bottom: 0;
+  background-color: transparent !important;
+}
+.accordion-item {
+  background-color: transparent;
+}
+
+.nav__list {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  top: 20px;
+  left: 190px;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.nav__list li {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px 8px;
+}
+.nav__list li:hover {
+  color: rgb(189, 186, 186);
+}
+
+.discover_btn {
+  position: absolute;
+  top: 15px;
+  left: 45%;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+.discover_btn i {
+  padding-top: 2px;
+  font-size: 1rem;
+}
+
+
+.custom-map-modal .modal-dialog{
+  max-width: 98vw;
+  min-height: 100vh;
+  margin: auto;
+}
+.custom-map-modal  .modal-content {
+  min-height: 100vh;
+  opacity: 0.7;
+}
+.modal_list {
+  width: 500px;
+  margin: 20% auto;
+}
+.modal_list li {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 25px 0;
+}
+@media only screen and (max-width: 990px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__logo {
+    content: url("https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/Fakeflix/Fakeflix_favicon_192.png");
+    width: 60px;
+    padding-top: 7px;
+    left: 18px;
+  }
+  .accordion {
+    right: 3px;
+  }
+  .discover_btn {
+    display: block;
+  }
+}

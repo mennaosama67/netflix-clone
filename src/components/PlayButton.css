@@ -1,0 +1,12 @@
+.play__button {
+    background-color: #e50914;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 0.3rem;
+  
+    margin-right: 1rem;
+  }

@@ -1,0 +1,9 @@
+.video__container{
+    position: fixed;
+    top: 0;
+    right:17rem;
+    width: 100vw;
+    height: 10vh;
+    z-index: 10000000;
+  
+}

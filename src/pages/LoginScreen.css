@@ -1,0 +1,80 @@
+.login__screen{
+    height: 100%;
+    position: relative;
+    background:url("https://www.slashgear.com/wp-content/uploads/2020/10/netflix.jpg") top no-repeat;
+    background-size: cover;
+}
+.login__gradiant{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background:rgba(0,0,0,0.4);
+    background-image: linear-gradient(to top ,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%,rgba(0,0,0,0.8)100%);
+}
+.login__logo{
+    position: fixed;
+    width:150px;
+    padding-left: 20px;
+    object-fit: contain;
+}
+.login__btn{
+    font-weight: 600;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border: none;
+    outline:none;
+    color: white;
+    background-color:#e50914;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.login__body{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.login__body h1{
+font-size: 3.2rem;
+margin-bottom: 10px;
+}
+.login__body h2{
+ font-size: 2rem;
+ font-weight: 400;
+ margin-bottom:20px;
+}
+.login__body h3{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.login__input{
+    margin-top: 30px;
+   
+}
+.login__input input{
+  padding: 15px 20px;
+  width: 30%;
+  border: none;
+  outline:none;
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+.login__input button{
+    font-size: 1.5rem;
+    border: none;
+    outline:none;
+    color: white;
+    background-color:#e50914;
+    padding: 15px 20px;
+   
+    
+}
