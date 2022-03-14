@@ -11,7 +11,7 @@ import {BrowserRouter} from 'react-router-dom'
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-    <BrowserRouter>  <App /></BrowserRouter>
+    <BrowserRouter basename="https://mennaosama67.github.io/netflix-clone">  <App /></BrowserRouter>
     
     </Provider>
   </React.StrictMode>,
