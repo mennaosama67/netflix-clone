@@ -4,6 +4,7 @@ import axios from "../axios/axios";
 import requests from "../axios/requests";
 import PlayButton from "./PlayButton";
 import DetailsModal from "./DetailsModal";
+import useGenreConversion from '../hooks/useGenreConversion'
 
 function Banner() {
      
@@ -17,7 +18,7 @@ function Banner() {
     }
     fetchMovies();
   }, []);
-
+  const genreNames=useGenreConversion(movie.genre_ids);
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   };
@@ -43,7 +44,7 @@ const hideModal=()=> setIsopen(false);
         </h1>
       </div>
       <div className="fade--bottom"></div>
-      <DetailsModal show={isOpen} onHide={hideModal}  movie={movie} imgBg={movieURL}/>
+      <DetailsModal show={isOpen} onHide={hideModal}  movie={movie} imgBg={movieURL} genreNames={genreNames}/>
 
     </header>
   );
