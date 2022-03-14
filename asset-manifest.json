@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/netflix-clone/static/css/main.91a2d620.css",
+    "main.js": "/netflix-clone/static/js/main.b58499e3.js",
+    "static/media/Netflix Intro (1080p) (Download).mp4": "/netflix-clone/static/media/Netflix Intro (1080p) (Download).c4f0dec28a2b142bdf43.mp4",
+    "index.html": "/netflix-clone/index.html",
+    "main.91a2d620.css.map": "/netflix-clone/static/css/main.91a2d620.css.map",
+    "main.b58499e3.js.map": "/netflix-clone/static/js/main.b58499e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91a2d620.css",
+    "static/js/main.b58499e3.js"
+  ]
+}
