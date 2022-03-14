@@ -3,7 +3,7 @@ import HomeScreen from "./pages/HomeScreen";
 import "./App.css";
 import LoginScreen from "./pages/LoginScreen";
 import SigninScreen from "./pages/SigninScreen";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,BrowserRouter } from "react-router-dom";
 import SignUpScreen from "./pages/SignUpScreen";
 import { useEffect } from "react";
 import { auth } from "./firebase";
@@ -39,24 +39,19 @@ const myStyle=useSelector((state) => state.movie.videoStyle)
   return (
     <div className="app">
     <PlayTrailer showVideo={video} videoStyle={myStyle}/>
-      <Routes basename="/https://mennaosama67.github.io/netflix-clone">
-      
+    <BrowserRouter>
+      <Routes >
           <Route path="/" element={<LoginScreen />} >
           <Route index path="signin" element={<SigninScreen />} />
           <Route path="signup" element={<SignUpScreen />} />
           </Route>
-  
-         
-     
-         <>
           <Route path="/home" element={<HomeScreen />}/>
           <Route path="/tv" element={<TvScreen/>}/>
           <Route path="/movies" element={<MoviesScreen/>}/>
           <Route path="/search" element={<SearchPage />}/>
           <Route path="/mylist" element={<MyList />}/>
-          </>
-       
       </Routes>
+      </BrowserRouter>
     </div>
   );
 }
