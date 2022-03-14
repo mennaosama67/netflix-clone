@@ -39,7 +39,7 @@ const myStyle=useSelector((state) => state.movie.videoStyle)
   return (
     <div className="app">
     <PlayTrailer showVideo={video} videoStyle={myStyle}/>
-      <Routes>
+      <Routes basename="/https://mennaosama67.github.io/netflix-clone">
       
           <Route path="/" element={<LoginScreen />} >
           <Route index path="signin" element={<SigninScreen />} />
